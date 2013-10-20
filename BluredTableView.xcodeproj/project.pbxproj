@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C8D33FDE1813E35100549247 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D33FDD1813E35100549247 /* Foundation.framework */; };
+		C8D33FE01813E35100549247 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D33FDF1813E35100549247 /* CoreGraphics.framework */; };
+		C8D33FE21813E35100549247 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D33FE11813E35100549247 /* UIKit.framework */; };
+		C8D33FE81813E35100549247 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8D33FE61813E35100549247 /* InfoPlist.strings */; };
+		C8D33FEA1813E35100549247 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D33FE91813E35100549247 /* main.m */; };
+		C8D33FEE1813E35100549247 /* JFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D33FED1813E35100549247 /* JFAppDelegate.m */; };
+		C8D33FF11813E35200549247 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8D33FEF1813E35100549247 /* Main_iPhone.storyboard */; };
+		C8D33FF41813E35200549247 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8D33FF21813E35200549247 /* Main_iPad.storyboard */; };
+		C8D33FF71813E35200549247 /* JFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D33FF61813E35200549247 /* JFViewController.m */; };
+		C8D33FF91813E35200549247 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8D33FF81813E35200549247 /* Images.xcassets */; };
+		C8D340001813E35200549247 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D33FFF1813E35200549247 /* XCTest.framework */; };
+		C8D340011813E35200549247 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D33FDD1813E35100549247 /* Foundation.framework */; };
+		C8D340021813E35200549247 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D33FE11813E35100549247 /* UIKit.framework */; };
+		C8D3400A1813E35200549247 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8D340081813E35200549247 /* InfoPlist.strings */; };
+		C8D3400C1813E35200549247 /* BluredTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D3400B1813E35200549247 /* BluredTableViewTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C8D340031813E35200549247 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8D33FD21813E35100549247 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8D33FD91813E35100549247;
+			remoteInfo = BluredTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C8D33FDA1813E35100549247 /* BluredTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluredTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8D33FDD1813E35100549247 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C8D33FDF1813E35100549247 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C8D33FE11813E35100549247 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C8D33FE51813E35100549247 /* BluredTableView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BluredTableView-Info.plist"; sourceTree = "<group>"; };
+		C8D33FE71813E35100549247 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C8D33FE91813E35100549247 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C8D33FEB1813E35100549247 /* BluredTableView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BluredTableView-Prefix.pch"; sourceTree = "<group>"; };
+		C8D33FEC1813E35100549247 /* JFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFAppDelegate.h; sourceTree = "<group>"; };
+		C8D33FED1813E35100549247 /* JFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFAppDelegate.m; sourceTree = "<group>"; };
+		C8D33FF01813E35100549247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		C8D33FF31813E35200549247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		C8D33FF51813E35200549247 /* JFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFViewController.h; sourceTree = "<group>"; };
+		C8D33FF61813E35200549247 /* JFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFViewController.m; sourceTree = "<group>"; };
+		C8D33FF81813E35200549247 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C8D33FFE1813E35200549247 /* BluredTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluredTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8D33FFF1813E35200549247 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C8D340071813E35200549247 /* BluredTableViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BluredTableViewTests-Info.plist"; sourceTree = "<group>"; };
+		C8D340091813E35200549247 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C8D3400B1813E35200549247 /* BluredTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BluredTableViewTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8D33FD71813E35100549247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8D33FE01813E35100549247 /* CoreGraphics.framework in Frameworks */,
+				C8D33FE21813E35100549247 /* UIKit.framework in Frameworks */,
+				C8D33FDE1813E35100549247 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8D33FFB1813E35200549247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8D340001813E35200549247 /* XCTest.framework in Frameworks */,
+				C8D340021813E35200549247 /* UIKit.framework in Frameworks */,
+				C8D340011813E35200549247 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8D33FD11813E35100549247 = {
+			isa = PBXGroup;
+			children = (
+				C8D33FE31813E35100549247 /* BluredTableView */,
+				C8D340051813E35200549247 /* BluredTableViewTests */,
+				C8D33FDC1813E35100549247 /* Frameworks */,
+				C8D33FDB1813E35100549247 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8D33FDB1813E35100549247 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8D33FDA1813E35100549247 /* BluredTableView.app */,
+				C8D33FFE1813E35200549247 /* BluredTableViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8D33FDC1813E35100549247 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8D33FDD1813E35100549247 /* Foundation.framework */,
+				C8D33FDF1813E35100549247 /* CoreGraphics.framework */,
+				C8D33FE11813E35100549247 /* UIKit.framework */,
+				C8D33FFF1813E35200549247 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8D33FE31813E35100549247 /* BluredTableView */ = {
+			isa = PBXGroup;
+			children = (
+				C8D33FEC1813E35100549247 /* JFAppDelegate.h */,
+				C8D33FED1813E35100549247 /* JFAppDelegate.m */,
+				C8D33FEF1813E35100549247 /* Main_iPhone.storyboard */,
+				C8D33FF21813E35200549247 /* Main_iPad.storyboard */,
+				C8D33FF51813E35200549247 /* JFViewController.h */,
+				C8D33FF61813E35200549247 /* JFViewController.m */,
+				C8D33FF81813E35200549247 /* Images.xcassets */,
+				C8D33FE41813E35100549247 /* Supporting Files */,
+			);
+			path = BluredTableView;
+			sourceTree = "<group>";
+		};
+		C8D33FE41813E35100549247 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8D33FE51813E35100549247 /* BluredTableView-Info.plist */,
+				C8D33FE61813E35100549247 /* InfoPlist.strings */,
+				C8D33FE91813E35100549247 /* main.m */,
+				C8D33FEB1813E35100549247 /* BluredTableView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C8D340051813E35200549247 /* BluredTableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				C8D3400B1813E35200549247 /* BluredTableViewTests.m */,
+				C8D340061813E35200549247 /* Supporting Files */,
+			);
+			path = BluredTableViewTests;
+			sourceTree = "<group>";
+		};
+		C8D340061813E35200549247 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8D340071813E35200549247 /* BluredTableViewTests-Info.plist */,
+				C8D340081813E35200549247 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8D33FD91813E35100549247 /* BluredTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8D3400F1813E35200549247 /* Build configuration list for PBXNativeTarget "BluredTableView" */;
+			buildPhases = (
+				C8D33FD61813E35100549247 /* Sources */,
+				C8D33FD71813E35100549247 /* Frameworks */,
+				C8D33FD81813E35100549247 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BluredTableView;
+			productName = BluredTableView;
+			productReference = C8D33FDA1813E35100549247 /* BluredTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C8D33FFD1813E35200549247 /* BluredTableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8D340121813E35200549247 /* Build configuration list for PBXNativeTarget "BluredTableViewTests" */;
+			buildPhases = (
+				C8D33FFA1813E35200549247 /* Sources */,
+				C8D33FFB1813E35200549247 /* Frameworks */,
+				C8D33FFC1813E35200549247 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8D340041813E35200549247 /* PBXTargetDependency */,
+			);
+			name = BluredTableViewTests;
+			productName = BluredTableViewTests;
+			productReference = C8D33FFE1813E35200549247 /* BluredTableViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8D33FD21813E35100549247 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JF;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Jernej Fijačko";
+				TargetAttributes = {
+					C8D33FFD1813E35200549247 = {
+						TestTargetID = C8D33FD91813E35100549247;
+					};
+				};
+			};
+			buildConfigurationList = C8D33FD51813E35100549247 /* Build configuration list for PBXProject "BluredTableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C8D33FD11813E35100549247;
+			productRefGroup = C8D33FDB1813E35100549247 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8D33FD91813E35100549247 /* BluredTableView */,
+				C8D33FFD1813E35200549247 /* BluredTableViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8D33FD81813E35100549247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8D33FF41813E35200549247 /* Main_iPad.storyboard in Resources */,
+				C8D33FF91813E35200549247 /* Images.xcassets in Resources */,
+				C8D33FF11813E35200549247 /* Main_iPhone.storyboard in Resources */,
+				C8D33FE81813E35100549247 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8D33FFC1813E35200549247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8D3400A1813E35200549247 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8D33FD61813E35100549247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8D33FEE1813E35100549247 /* JFAppDelegate.m in Sources */,
+				C8D33FF71813E35200549247 /* JFViewController.m in Sources */,
+				C8D33FEA1813E35100549247 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8D33FFA1813E35200549247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8D3400C1813E35200549247 /* BluredTableViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C8D340041813E35200549247 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8D33FD91813E35100549247 /* BluredTableView */;
+			targetProxy = C8D340031813E35200549247 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C8D33FE61813E35100549247 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8D33FE71813E35100549247 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C8D33FEF1813E35100549247 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8D33FF01813E35100549247 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		C8D33FF21813E35200549247 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8D33FF31813E35200549247 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		C8D340081813E35200549247 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8D340091813E35200549247 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C8D3400D1813E35200549247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8D3400E1813E35200549247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8D340101813E35200549247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BluredTableView/BluredTableView-Prefix.pch";
+				INFOPLIST_FILE = "BluredTableView/BluredTableView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C8D340111813E35200549247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BluredTableView/BluredTableView-Prefix.pch";
+				INFOPLIST_FILE = "BluredTableView/BluredTableView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C8D340131813E35200549247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BluredTableView.app/BluredTableView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BluredTableView/BluredTableView-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BluredTableViewTests/BluredTableViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C8D340141813E35200549247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BluredTableView.app/BluredTableView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BluredTableView/BluredTableView-Prefix.pch";
+				INFOPLIST_FILE = "BluredTableViewTests/BluredTableViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8D33FD51813E35100549247 /* Build configuration list for PBXProject "BluredTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8D3400D1813E35200549247 /* Debug */,
+				C8D3400E1813E35200549247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8D3400F1813E35200549247 /* Build configuration list for PBXNativeTarget "BluredTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8D340101813E35200549247 /* Debug */,
+				C8D340111813E35200549247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C8D340121813E35200549247 /* Build configuration list for PBXNativeTarget "BluredTableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8D340131813E35200549247 /* Debug */,
+				C8D340141813E35200549247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C8D33FD21813E35100549247 /* Project object */;
+}
