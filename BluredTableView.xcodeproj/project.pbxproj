@@ -22,6 +22,13 @@
 		C8D340021813E35200549247 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D33FE11813E35100549247 /* UIKit.framework */; };
 		C8D3400A1813E35200549247 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8D340081813E35200549247 /* InfoPlist.strings */; };
 		C8D3400C1813E35200549247 /* BluredTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D3400B1813E35200549247 /* BluredTableViewTests.m */; };
+		C8D3401718140B6100549247 /* JFBluredScrollSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D3401618140B6100549247 /* JFBluredScrollSubview.m */; };
+		C8D3401A18140D2600549247 /* UIScrollView+BluredBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D3401918140D2600549247 /* UIScrollView+BluredBackground.m */; };
+		C8D3401D1814142000549247 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D3401C1814142000549247 /* UIImage+ImageEffects.m */; };
+		C8D3401F1814143D00549247 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D3401E1814143D00549247 /* Accelerate.framework */; };
+		C8D340211814147100549247 /* cheetah960.png in Resources */ = {isa = PBXBuildFile; fileRef = C8D340201814147100549247 /* cheetah960.png */; };
+		C8D3402318141D9800549247 /* cheetah1136.png in Resources */ = {isa = PBXBuildFile; fileRef = C8D3402218141D9800549247 /* cheetah1136.png */; };
+		C8ECEA13181445F300A682EE /* UITableView+Separator.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ECEA12181445F300A682EE /* UITableView+Separator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +62,17 @@
 		C8D340071813E35200549247 /* BluredTableViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BluredTableViewTests-Info.plist"; sourceTree = "<group>"; };
 		C8D340091813E35200549247 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C8D3400B1813E35200549247 /* BluredTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BluredTableViewTests.m; sourceTree = "<group>"; };
+		C8D3401518140B6100549247 /* JFBluredScrollSubview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFBluredScrollSubview.h; sourceTree = "<group>"; };
+		C8D3401618140B6100549247 /* JFBluredScrollSubview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFBluredScrollSubview.m; sourceTree = "<group>"; };
+		C8D3401818140D2600549247 /* UIScrollView+BluredBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+BluredBackground.h"; sourceTree = "<group>"; };
+		C8D3401918140D2600549247 /* UIScrollView+BluredBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+BluredBackground.m"; sourceTree = "<group>"; };
+		C8D3401B1814142000549247 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		C8D3401C1814142000549247 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		C8D3401E1814143D00549247 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		C8D340201814147100549247 /* cheetah960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cheetah960.png; sourceTree = "<group>"; };
+		C8D3402218141D9800549247 /* cheetah1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cheetah1136.png; sourceTree = "<group>"; };
+		C8ECEA11181445F300A682EE /* UITableView+Separator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Separator.h"; sourceTree = "<group>"; };
+		C8ECEA12181445F300A682EE /* UITableView+Separator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Separator.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8D3401F1814143D00549247 /* Accelerate.framework in Frameworks */,
 				C8D33FE01813E35100549247 /* CoreGraphics.framework in Frameworks */,
 				C8D33FE21813E35100549247 /* UIKit.framework in Frameworks */,
 				C8D33FDE1813E35100549247 /* Foundation.framework in Frameworks */,
@@ -103,6 +122,7 @@
 		C8D33FDC1813E35100549247 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C8D3401E1814143D00549247 /* Accelerate.framework */,
 				C8D33FDD1813E35100549247 /* Foundation.framework */,
 				C8D33FDF1813E35100549247 /* CoreGraphics.framework */,
 				C8D33FE11813E35100549247 /* UIKit.framework */,
@@ -114,12 +134,20 @@
 		C8D33FE31813E35100549247 /* BluredTableView */ = {
 			isa = PBXGroup;
 			children = (
+				C8D3401B1814142000549247 /* UIImage+ImageEffects.h */,
+				C8D3401C1814142000549247 /* UIImage+ImageEffects.m */,
 				C8D33FEC1813E35100549247 /* JFAppDelegate.h */,
 				C8D33FED1813E35100549247 /* JFAppDelegate.m */,
 				C8D33FEF1813E35100549247 /* Main_iPhone.storyboard */,
 				C8D33FF21813E35200549247 /* Main_iPad.storyboard */,
 				C8D33FF51813E35200549247 /* JFViewController.h */,
 				C8D33FF61813E35200549247 /* JFViewController.m */,
+				C8D3401518140B6100549247 /* JFBluredScrollSubview.h */,
+				C8D3401618140B6100549247 /* JFBluredScrollSubview.m */,
+				C8D3401818140D2600549247 /* UIScrollView+BluredBackground.h */,
+				C8D3401918140D2600549247 /* UIScrollView+BluredBackground.m */,
+				C8ECEA11181445F300A682EE /* UITableView+Separator.h */,
+				C8ECEA12181445F300A682EE /* UITableView+Separator.m */,
 				C8D33FF81813E35200549247 /* Images.xcassets */,
 				C8D33FE41813E35100549247 /* Supporting Files */,
 			);
@@ -129,6 +157,8 @@
 		C8D33FE41813E35100549247 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C8D340201814147100549247 /* cheetah960.png */,
+				C8D3402218141D9800549247 /* cheetah1136.png */,
 				C8D33FE51813E35100549247 /* BluredTableView-Info.plist */,
 				C8D33FE61813E35100549247 /* InfoPlist.strings */,
 				C8D33FE91813E35100549247 /* main.m */,
@@ -234,8 +264,10 @@
 			files = (
 				C8D33FF41813E35200549247 /* Main_iPad.storyboard in Resources */,
 				C8D33FF91813E35200549247 /* Images.xcassets in Resources */,
+				C8D340211814147100549247 /* cheetah960.png in Resources */,
 				C8D33FF11813E35200549247 /* Main_iPhone.storyboard in Resources */,
 				C8D33FE81813E35100549247 /* InfoPlist.strings in Resources */,
+				C8D3402318141D9800549247 /* cheetah1136.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8D3401A18140D2600549247 /* UIScrollView+BluredBackground.m in Sources */,
+				C8ECEA13181445F300A682EE /* UITableView+Separator.m in Sources */,
+				C8D3401718140B6100549247 /* JFBluredScrollSubview.m in Sources */,
+				C8D3401D1814142000549247 /* UIImage+ImageEffects.m in Sources */,
 				C8D33FEE1813E35100549247 /* JFAppDelegate.m in Sources */,
 				C8D33FF71813E35200549247 /* JFViewController.m in Sources */,
 				C8D33FEA1813E35100549247 /* main.m in Sources */,
@@ -475,6 +511,7 @@
 				C8D340111813E35200549247 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8D340121813E35200549247 /* Build configuration list for PBXNativeTarget "BluredTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +520,7 @@
 				C8D340141813E35200549247 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
