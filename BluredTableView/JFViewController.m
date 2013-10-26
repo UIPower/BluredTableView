@@ -11,6 +11,7 @@
 #import "JFBluredScrollSubview.h"
 #import "UIImage+ImageEffects.h"
 #import "UITableView+Separator.h"
+#import "JFTableViewCell.h"
 
 @interface JFViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -70,7 +71,7 @@
     static NSString *CellIdentifier = @"CellIdentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[JFTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         JFBluredScrollSubview *subView = [[JFBluredScrollSubview alloc] initWithFrame:cell.bounds];
         subView.scrollView = _tableView;
         cell.selectedBackgroundView = subView;
@@ -94,7 +95,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView configureSeparatorForCell:cell];
+    [tableView configureSeparatorForCell:cell atIndexPath:indexPath];
 }
 
 #pragma mark - Status bar

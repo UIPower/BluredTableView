@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8CCB671181C19EB000ADD67 /* JFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CCB670181C19EB000ADD67 /* JFTableViewCell.m */; };
 		C8D33FDE1813E35100549247 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D33FDD1813E35100549247 /* Foundation.framework */; };
 		C8D33FE01813E35100549247 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D33FDF1813E35100549247 /* CoreGraphics.framework */; };
 		C8D33FE21813E35100549247 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D33FE11813E35100549247 /* UIKit.framework */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C8CCB66F181C19EB000ADD67 /* JFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTableViewCell.h; sourceTree = "<group>"; };
+		C8CCB670181C19EB000ADD67 /* JFTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTableViewCell.m; sourceTree = "<group>"; };
 		C8D33FDA1813E35100549247 /* BluredTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluredTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D33FDD1813E35100549247 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C8D33FDF1813E35100549247 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -148,6 +151,8 @@
 				C8D3401918140D2600549247 /* UIScrollView+BluredBackground.m */,
 				C8ECEA11181445F300A682EE /* UITableView+Separator.h */,
 				C8ECEA12181445F300A682EE /* UITableView+Separator.m */,
+				C8CCB66F181C19EB000ADD67 /* JFTableViewCell.h */,
+				C8CCB670181C19EB000ADD67 /* JFTableViewCell.m */,
 				C8D33FF81813E35200549247 /* Images.xcassets */,
 				C8D33FE41813E35100549247 /* Supporting Files */,
 			);
@@ -293,6 +298,7 @@
 				C8D33FEE1813E35100549247 /* JFAppDelegate.m in Sources */,
 				C8D33FF71813E35200549247 /* JFViewController.m in Sources */,
 				C8D33FEA1813E35100549247 /* main.m in Sources */,
+				C8CCB671181C19EB000ADD67 /* JFTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

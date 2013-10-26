@@ -10,6 +10,9 @@
 
 @interface UITableView (Separator)
 
-- (void)configureSeparatorForCell:(UITableViewCell *)cell;
+- (void)configureSeparatorForCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
+
+- (void)cellDidSelect:(UITableViewCell *)cell;
+- (void)cellDidDeselect:(UITableViewCell *)cell;
 
 @end
