@@ -12,7 +12,7 @@
 
 - (void)configureSeparatorForCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 
-- (void)cellDidSelect:(UITableViewCell *)cell;
-- (void)cellDidDeselect:(UITableViewCell *)cell;
+- (void)hideSeparatorsForCell:(UITableViewCell *)cell;
+- (void)showSeparatorsForCell:(UITableViewCell *)cell;
 
 @end

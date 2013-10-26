@@ -23,15 +23,37 @@
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
-    if ([self.superview.superview isKindOfClass:[UITableView class]]) {
-        UITableView *tableView = (UITableView *)self.superview.superview;
-        if (selected) {
-            [tableView cellDidSelect:self];
-        }
-        else {
-            [tableView cellDidDeselect:self];
-        }
+    UITableView *tableView = [self presentingTableView];
+    if (selected) {
+        [tableView hideSeparatorsForCell:self];
     }
+    else {
+        [tableView showSeparatorsForCell:self];
+    }
+}
+
+- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated
+{
+    [super setHighlighted:highlighted animated:animated];
+    UITableView *tableView = [self presentingTableView];
+    if (highlighted) {
+        [tableView hideSeparatorsForCell:self];
+    }
+    else {
+        [tableView showSeparatorsForCell:self];
+    }
+}
+
+- (UITableView *)presentingTableView
+{
+    UITableView *tableView = nil;
+    if ([self.superview isKindOfClass:[UITableView class]]) {
+        tableView = (UITableView *)self.superview;
+    }
+    else if ([self.superview.superview isKindOfClass:[UITableView class]]) {
+        tableView = (UITableView *)self.superview.superview;
+    }
+    return tableView;
 }
 
 @end

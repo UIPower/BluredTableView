@@ -39,7 +39,7 @@ static NSInteger const kSeparatorTag = 123;
                                  hairlineHeight);
 }
 
-- (void)cellDidSelect:(UITableViewCell *)cell
+- (void)hideSeparatorsForCell:(UITableViewCell *)cell
 {
     JFBluredScrollSubview *separator = (JFBluredScrollSubview *)[cell viewWithTag:kSeparatorTag];
     separator.alpha = 0.f;
@@ -52,7 +52,7 @@ static NSInteger const kSeparatorTag = 123;
     }
 }
 
-- (void)cellDidDeselect:(UITableViewCell *)cell
+- (void)showSeparatorsForCell:(UITableViewCell *)cell
 {
     JFBluredScrollSubview *separator = (JFBluredScrollSubview *)[cell viewWithTag:kSeparatorTag];
     separator.alpha = 1.f;
