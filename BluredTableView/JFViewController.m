@@ -46,6 +46,19 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
+    self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
+    
+    NSInteger index = [self.navigationController.viewControllers indexOfObject:self];
+    self.title = [NSString stringWithFormat:@"Table no. %d", index];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.tableView deselectRowAtIndexPath:self.tableView.indexPathForSelectedRow animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -91,18 +104,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    JFViewController *controller = [[JFViewController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView configureSeparatorForCell:cell atIndexPath:indexPath];
-}
-
-#pragma mark - Status bar
-
-- (BOOL)prefersStatusBarHidden
-{
-    return YES;
 }
 
 @end
