@@ -10,6 +10,6 @@
 
 @interface JFBluredScrollSubview : UIView
 
-@property (nonatomic, weak) UIScrollView *scrollView;
+@property (nonatomic, assign) UIScrollView *scrollView;
 
 @end

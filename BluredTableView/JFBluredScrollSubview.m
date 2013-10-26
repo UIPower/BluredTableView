@@ -11,6 +11,7 @@
 
 @implementation JFBluredScrollSubview {
     UIImageView *_backgroundView;
+    __unsafe_unretained UIScrollView *_scrollView;
 }
 
 @synthesize scrollView = _scrollView;
@@ -22,7 +23,6 @@
         _backgroundView = [[UIImageView alloc] init];
         _backgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         [self addSubview:_backgroundView];
-        [self registerObserver];
         self.clipsToBounds = YES;
     }
     return self;
@@ -30,7 +30,7 @@
 
 - (void)dealloc
 {
-    [self unregisterObserver];
+    self.scrollView = nil;
 }
 
 #pragma mark - ScrollView setter
