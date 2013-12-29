@@ -52,7 +52,7 @@
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
     
     NSInteger index = [self.navigationController.viewControllers indexOfObject:self];
-    self.title = [NSString stringWithFormat:@"Table no. %d", index];
+    self.title = [NSString stringWithFormat:@"Table no. %ld", (long)index];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -82,7 +82,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"CellIdentifier";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    JFTableViewCell *cell = (JFTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (!cell) {
         cell = [[JFTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         JFBluredScrollSubview *subView = [[JFBluredScrollSubview alloc] initWithFrame:cell.bounds];
@@ -90,7 +90,8 @@
         cell.selectedBackgroundView = subView;
         cell.backgroundColor = [UIColor clearColor];
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"Cell %ld", (long)indexPath.row];
+    cell.bluredLabel.text = [NSString stringWithFormat:@"Cell %ld", (long)indexPath.row];
+    cell.bluredLabel.scrollView = _tableView;
     return cell;
 }
 
@@ -98,8 +99,9 @@
 
 - (void)tableView:(UITableView *)tableView didHighlightRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    JFTableViewCell *cell = (JFTableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
     [cell.selectedBackgroundView setNeedsLayout];
+    [cell.bluredLabel setNeedsLayout];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

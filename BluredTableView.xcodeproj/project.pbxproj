@@ -30,6 +30,7 @@
 		C8D340211814147100549247 /* cheetah960.png in Resources */ = {isa = PBXBuildFile; fileRef = C8D340201814147100549247 /* cheetah960.png */; };
 		C8D3402318141D9800549247 /* cheetah1136.png in Resources */ = {isa = PBXBuildFile; fileRef = C8D3402218141D9800549247 /* cheetah1136.png */; };
 		C8ECEA13181445F300A682EE /* UITableView+Separator.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ECEA12181445F300A682EE /* UITableView+Separator.m */; };
+		C8F164F9187024460078DF57 /* JFBluredScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F164F8187024460078DF57 /* JFBluredScrollLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		C8D3402218141D9800549247 /* cheetah1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cheetah1136.png; sourceTree = "<group>"; };
 		C8ECEA11181445F300A682EE /* UITableView+Separator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Separator.h"; sourceTree = "<group>"; };
 		C8ECEA12181445F300A682EE /* UITableView+Separator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Separator.m"; sourceTree = "<group>"; };
+		C8F164F7187024460078DF57 /* JFBluredScrollLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFBluredScrollLabel.h; sourceTree = "<group>"; };
+		C8F164F8187024460078DF57 /* JFBluredScrollLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFBluredScrollLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,8 @@
 				C8D33FF61813E35200549247 /* JFViewController.m */,
 				C8D3401518140B6100549247 /* JFBluredScrollSubview.h */,
 				C8D3401618140B6100549247 /* JFBluredScrollSubview.m */,
+				C8F164F7187024460078DF57 /* JFBluredScrollLabel.h */,
+				C8F164F8187024460078DF57 /* JFBluredScrollLabel.m */,
 				C8D3401818140D2600549247 /* UIScrollView+BluredBackground.h */,
 				C8D3401918140D2600549247 /* UIScrollView+BluredBackground.m */,
 				C8ECEA11181445F300A682EE /* UITableView+Separator.h */,
@@ -291,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8F164F9187024460078DF57 /* JFBluredScrollLabel.m in Sources */,
 				C8D3401A18140D2600549247 /* UIScrollView+BluredBackground.m in Sources */,
 				C8ECEA13181445F300A682EE /* UITableView+Separator.m in Sources */,
 				C8D3401718140B6100549247 /* JFBluredScrollSubview.m in Sources */,

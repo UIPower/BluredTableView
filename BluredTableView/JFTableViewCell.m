@@ -9,16 +9,36 @@
 #import "JFTableViewCell.h"
 #import "UITableView+Separator.h"
 
+static CGFloat const kCellPadding = 15.f;
+
 @implementation JFTableViewCell
+@synthesize bluredLabel = _bluredLabel;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code
+        _bluredLabel = [[JFBluredScrollLabel alloc] init];
+        _bluredLabel.backgroundColor = [UIColor clearColor];
+        [self.contentView addSubview:_bluredLabel];
     }
     return self;
 }
+
+#pragma mark - Layout
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    CGRect bounds = self.contentView.bounds;
+    _bluredLabel.frame = CGRectMake(kCellPadding,
+                                    0,
+                                    bounds.size.width - 2*kCellPadding,
+                                    bounds.size.height);
+}
+
+#pragma mark - Separators
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {

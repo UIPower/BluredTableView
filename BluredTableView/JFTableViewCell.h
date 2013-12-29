@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JFBluredScrollLabel.h"
 
 @interface JFTableViewCell : UITableViewCell
+
+@property (nonatomic, readonly) JFBluredScrollLabel *bluredLabel;
 
 @end
